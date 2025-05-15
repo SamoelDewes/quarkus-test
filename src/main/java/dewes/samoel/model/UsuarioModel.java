@@ -15,7 +15,7 @@ import lombok.Setter;
 @RegisterForReflection
 @Getter
 @Setter
-@Table(name = "tb_usuario")
+@Table(name = "usuario")
 public class UsuarioModel extends PanacheEntityBase {
 
 	@Id
