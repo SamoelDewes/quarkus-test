@@ -1,5 +1,7 @@
 package dewes.samoel.model;
 
+import java.util.Date;
+
 import io.quarkus.hibernate.orm.panache.PanacheEntityBase;
 import io.quarkus.runtime.annotations.RegisterForReflection;
 import jakarta.persistence.Column;
@@ -22,4 +24,7 @@ public class UsuarioModel extends PanacheEntityBase {
 
 	@Column(name = "nome")
 	private String nome;
+	
+	@Column(name = "nascimento")
+	private Date nascimento;
 }

@@ -17,7 +17,7 @@ public class UsuarioRepositoryImpl implements UsuarioRepository {
 		List<UsuarioModel> usuarios = UsuarioModel.findAll().list();
 
 		List<UsuarioDTO> usuariosDTO = usuarios.stream()
-				.map(usuario -> new UsuarioDTO(usuario.getCodigo(), usuario.getNome())).collect(Collectors.toList());
+				.map(usuario -> new UsuarioDTO(usuario.getCodigo(), usuario.getNome(), usuario.getNascimento())).collect(Collectors.toList());
 
 		return usuariosDTO;
 
