@@ -6,7 +6,9 @@ import java.util.stream.Collectors;
 import dewes.samoel.dto.TarefaDTO;
 import dewes.samoel.model.TarefaModel;
 import dewes.samoel.repository.TarefaRepository;
+import jakarta.enterprise.context.ApplicationScoped;
 
+@ApplicationScoped
 public class TarefaRepositoryImpl implements TarefaRepository {
 
 	@Override
